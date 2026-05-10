@@ -1,4 +1,5 @@
 import logging
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
 Application, CommandHandler, CallbackQueryHandler,
@@ -7,7 +8,8 @@ MessageHandler, filters, ContextTypes
 
 # ─── Настройки ────────────────────────────────────────────────────────────────
 
-BOT_TOKEN = "8566763615:AAE5UxnpvRiNzrwcz6YtD2ghHNpW9ZjC-pw"
+BOT_TOKEN = os.getenv("8566763615:AAE5UxnpvRiNzrwcz6YtD2ghHNpW9ZjC-pw")
+
 
 
 logging.basicConfig(
